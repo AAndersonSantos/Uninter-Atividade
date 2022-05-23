@@ -1,0 +1,20 @@
+<table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">RU</th>
+        <th scope="col">Curso</th>
+        <th scope="col">Data de Aniversário</th>
+      </tr>
+    </thead>
+    <tbody>
+        <ng-container *ngFor=" let arquivo of lista_arquivos" >
+            <tr>
+                <td>{{  arquivo.nome }}</td> 
+                <td>{{  arquivo.ru }}</td> 
+                <td>{{  arquivo.curso }}</td>
+                <td>{{  arquivo.data_aniversario }}</td>
+            </tr>
+        </ng-container>
+    </tbody>
+</table>
